@@ -1,5 +1,7 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+
 
 /*
 	Strata by HTML5 UP
@@ -60,6 +62,7 @@ mark {
 	color: inherit;
 }
 
+/*
 input::-moz-focus-inner {
 	border: 0;
 	padding: 0;
@@ -72,6 +75,7 @@ input, select, textarea {
 	appearance: none;
 }
 
+ */
 /* Basic */
 
 	html {
@@ -97,8 +101,8 @@ input, select, textarea {
 			transition: none !important;
 		}
 
-	body, input, select, textarea {
-		color: #a2a2a2;
+	body, select, textarea {
+		color: #000000;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -3242,5 +3246,44 @@ ul.nav li .icon:before {
 ul.nav li:nth-child(2) h4 span:nth-child(2) {
 	filter: blur(3px);
         -webkit-filter: blur(3px);
+}
+
+
+ .input-wrapper {
+	 position: relative;
+	 width: 325px;
+	 margin: 0px 0px 32px 5px;
+	 display: inline-block;
+}
+ .input-highlight {
+	 font-size: 20px;
+	 user-select: none;
+	 line-height: 20px;
+	 border-top: 3px solid #00FFFF;
+	 position: absolute;
+	 left: 0;
+	 bottom: 0;
+	 max-width: 100%;
+	 height: 0;
+	 color: transparent;
+	 font-family: Roboto Slab, sans-serif;
+}
+ input {
+	 height: 30px;
+	 width: 100%;
+	 min-width: 100%;
+	 padding: 0;
+	 border-radius: 0;
+	 line-height: 30px;
+	 background-color: transparent;
+	 color: #000;
+	 font-size: 20px;
+	 border: none;
+	 outline: none;
+	 border-bottom: 3px solid #333;
+	 font-family: Roboto Slab, sans-serif;
+}
+ input:focus + .input-highlight {
+	 border-top: 3px solid #fbc91b;
 }
 

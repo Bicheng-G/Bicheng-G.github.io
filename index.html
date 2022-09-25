@@ -19,7 +19,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -36,7 +35,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
 					<h1>Hi! I am<strong> Bicheng Gu</strong>. <br/>I'm a Product Analyst based in Singapore
-					who is passionate about <strong>data</strong>, <strong>automation</strong> and <strong>photography</strong>.<br />
+					who is passionate about <strong>data</strong>, <strong>automation</strong> and <strong>front-end</strong>.<br />
 					<!-- crafted by <a href="http://html5up.net">HTML5 UP</a>.</h1> -->
 				</div>
 			</header>
@@ -58,6 +57,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<!-- Two -->
 					<section id="two">
 						<h2>Recent Work</h2>
+						<div class="icon solid fa-search" id="root"></div>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
@@ -77,7 +77,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/02.png" class="image fit thumb"><img src="images/thumbs/02.png" alt="" /></a>
 								<h3><a href="https://github.com/bc2ajia/Tiktok-Downloader-Shortcut-ios" target="_blank" rel="noopener noreferrer"> Tiktok Downloader For iOS Shortcuts</a></h3>
-								<p>This Shortcut helps you to download Tiktok videos without watermark to your local storage.</p>
+								<p>This Shortcut helps you to download Tiktok videos without watermark to your local storage.<br />#Others</p>
 							</article>
 							<!--
 							<article class="col-6 col-12-xsmall work-item">
@@ -120,13 +120,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<div class="col-12 col-12-small">
 								<ul class="nav">
 									<li>
-										<h4 class="icon solid fa-home"><span class="label">Residency</span> <span> Singapore PR</span></h4>
+										<h4 class="icon solid fa-home"> <span class="label">Residency</span> <span>Singapore PR</span></h4>
 									</li>
 									<li>
-										<h4 class="icon solid fa-mobile-alt"><span class="label">Phone</span> <span>  +65 8588 2413</span></h4>
+										<h4 class="icon solid fa-mobile-alt"> <span class="label">Phone</span> <span>+65 8588 2413</span></h4>
 									</li>
 									<li>
-										<h4 class="icon solid fa-envelope"><span class="label">Email</span><a href="mailto:bicheng.gu@yahoo.com" target="_blank" rel="noopener noreferrer"> bicheng.gu@yahoo.com</a></h4>
+										<h4 class="icon solid fa-envelope"> <span class="label">Email</span><a href="mailto:bicheng.gu@yahoo.com" target="_blank" rel="noopener noreferrer">bicheng.gu@yahoo.com</a></h4>
 										
 									</li>
 								</ul>
@@ -470,12 +470,15 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</footer>
 
 		<!-- Scripts -->
+			<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+			<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+			<script src="assets/js/script.js"></script>
+			<script src="assets/js/search_bar.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
