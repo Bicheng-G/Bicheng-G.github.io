@@ -4,12 +4,17 @@ A little space to showcase my works during spare time. Thanks for visiting!
 
 [Link to my portfolio website.](https://bicheng-g.github.io/portfolio/)
 
+**To Do**:
+- [ ] Setup database.
+  - [ ] Store my works.
+  - [ ] Interact with search bar.
+
 **My Modifications**:
-* Setup Google Analytics and Google Tag Manager tracking.
-* Added favicon for browser tab icon.
-* Fixed background image to prevent black strip.
-* Added search bar with React.
-* Added content filter based on search query with JavaScript.
+- [x] Setup Google Analytics and Google Tag Manager tracking.
+- [x] Added favicon for browser tab icon.
+- [x] Fixed background image to prevent black strip.
+- [x] Added search bar with React.
+- [x] Added content filter based on search query with JavaScript.
 
 **Credit**:
 * HTML5UP for the website skeleton.
