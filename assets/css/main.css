@@ -2576,6 +2576,21 @@ input, select, textarea {
 			margin: 0;
 		}
 
+		ul.skill-tags {
+			margin: 0 ;
+			padding: 0;
+		}
+
+		.skill-tags li{
+			margin: 0 ;
+			padding: 0;
+			font-size: 0.75em;
+			line-height: 1.5em;
+			color: grey;
+			display: inline-block;
+			font-style: italic;
+		}
+
 /* Header */
 
 	#header {
