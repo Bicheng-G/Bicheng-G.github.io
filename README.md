@@ -2,7 +2,7 @@
 
 A little space to showcase my works during spare time. Thanks for visiting!
 
-[Link to my portfolio website.](https://bicheng-g.github.io/portfolio/)
+:link: [Link to my portfolio website.](https://bicheng-g.github.io/portfolio/)
 
 **To Do**:
 - [ ] Setup database.
