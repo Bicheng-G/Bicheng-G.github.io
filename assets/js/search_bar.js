@@ -7,7 +7,6 @@ function filterElement(){
 
 	articleElements.forEach((element) =>{
 		let text = element.textContent;
-		console.log(text)
 		if(text.toLowerCase().includes('#'.concat(filter.toLowerCase()))){
 			element.style.display = '';
 		} else {
