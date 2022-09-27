@@ -2076,8 +2076,6 @@ input, select, textarea {
 				transition: opacity 0.2s ease-in-out;
 				border-radius: 0.35em;
 				border: solid 3px rgba(255, 255, 255, 0.5);
-				color: #fff;
-				content: 'View';
 				display: inline-block;
 				font-size: 0.8em;
 				font-weight: 400;
@@ -2099,7 +2097,7 @@ input, select, textarea {
 
 			.image.thumb:hover:before {
 				background: url("images/overlay.png"), url("images/overlay.png");
-				opacity: 1.0;
+				opacity: 0;
 			}
 
 		.image img {
@@ -2559,6 +2557,8 @@ input, select, textarea {
 
 	.work-item {
 		margin: 0 0 2em 0;
+		display: flex;
+   		flex-direction: column;
 	}
 
 		.work-item .image {
@@ -2566,27 +2566,26 @@ input, select, textarea {
 		}
 
 		.work-item h3 {
-			font-size: 1em;
+			font-size: 1.2em;
 			margin: 0 0 0.5em 0;
 		}
 
 		.work-item p {
-			font-size: 0.8em;
+			font-size: 1em;
 			line-height: 1.5em;
 			margin: 0;
 		}
 
 		ul.skill-tags {
-			list-style: none;
 			margin: 0 ;
 			padding: 0;
 		}
 
 		.skill-tags li{
-			list-style: none;
 			margin: 0 ;
-			padding: 0;
-			font-size: 0.75em;
+			padding-right: 5px;
+			padding-left: 0;
+			font-size: 0.9em;
 			line-height: 1.5em;
 			color: grey;
 			display: inline-block;
@@ -3272,11 +3271,11 @@ ul.nav li:nth-child(2) h4 span:nth-child(2) {
 	 margin: 0px 0px 32px 5px;
 	 display: inline-block;
 }
- .input-highlight {
+.input-highlight {
 	 font-size: 20px;
 	 user-select: none;
 	 line-height: 20px;
-	 border-top: 3px solid #00FFFF;
+	 border-top: 3px solid cyan;
 	 position: absolute;
 	 left: 0;
 	 bottom: 0;
@@ -3291,7 +3290,7 @@ ul.nav li:nth-child(2) h4 span:nth-child(2) {
 	 min-width: 100%;
 	 padding: 0;
 	 border-radius: 0;
-	 line-height: 30px;
+	 line-height: 70px;
 	 background-color: transparent;
 	 color: #000;
 	 font-size: 20px;
@@ -3303,4 +3302,3 @@ ul.nav li:nth-child(2) h4 span:nth-child(2) {
  input:focus + .input-highlight {
 	 border-top: 3px solid #fbc91b;
 }
-

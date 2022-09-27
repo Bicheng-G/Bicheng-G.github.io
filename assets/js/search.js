@@ -7,11 +7,12 @@ function filterElement(){
 
 	articleElements.forEach((element) =>{
 		let text = element.textContent;
-		if(text.toLowerCase().includes('#'.concat(filter.toLowerCase()))){
+		if(text.toLowerCase().includes('#'.concat(filter.toLowerCase())) || !filter){
 			element.style.display = '';
 		} else {
 			element.style.display ='none';
 		}
+
 	});
 
 }
