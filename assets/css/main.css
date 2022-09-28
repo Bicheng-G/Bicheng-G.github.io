@@ -3265,39 +3265,40 @@ ul.nav li:nth-child(2) h4 span:nth-child(2) {
 }
 
 
- .input-wrapper {
-	 position: relative;
-	 width: 315px;
-	 margin: 0px 0px 32px 5px;
-	 display: inline-block;
+.input-wrapper {
+ position: relative;
+ width: 45%;
+ min-width: 250px;
+ margin: 0px 0px 32px 5px;
+ display: inline-block;
 }
 .input-highlight {
-	 font-size: 20px;
-	 user-select: none;
-	 line-height: 20px;
-	 border-top: 3px solid cyan;
-	 position: absolute;
-	 left: 0;
-	 bottom: 0;
-	 max-width: 100%;
-	 height: 0;
-	 color: transparent;
-	 font-family: Roboto Slab, sans-serif;
+    font-size: 18px;
+    user-select: none;
+    line-height: 20px;
+    border-top: 3px solid #00FFFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 100%;
+    height: 0;
+    color: transparent;
+    font-family: Roboto Slab, sans-serif;
 }
- input {
-	 height: 30px;
-	 width: 100%;
-	 min-width: 100%;
-	 padding: 0;
-	 border-radius: 0;
-	 line-height: 70px;
-	 background-color: transparent;
-	 color: #000;
-	 font-size: 20px;
-	 border: none;
-	 outline: none;
-	 border-bottom: 3px solid #333;
-	 font-family: Roboto Slab, sans-serif;
+input {
+    height: 30px;
+    width: 100%;
+    min-width: 100%;
+    padding: 0;
+    border-radius: 0;
+    line-height: 30px;
+    background-color: transparent;
+    color: #000;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #333;
+    font-family: Roboto Slab, sans-serif;
 }
  input:focus + .input-highlight {
 	 border-top: 3px solid #fbc91b;

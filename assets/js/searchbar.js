@@ -26,7 +26,7 @@ class App extends React.Component {
       className: "input-wrapper"
     }, /*#__PURE__*/React.createElement("input", {
       onChange: this.onInputChange,
-      placeholder: " Search by skill tags (eg. sql or r)",
+      placeholder: " Search by skill tags..",
       value: inputValue,
       id: "search-input",
       spellCheck: false
@@ -38,5 +38,4 @@ class App extends React.Component {
 }
 
 ReactDOM.render( /*#__PURE__*/React.createElement(App, null), document.getElementById('root'));
-
 
