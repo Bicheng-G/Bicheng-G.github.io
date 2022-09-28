@@ -75,7 +75,7 @@
 					$window.off('scroll.strata_parallax');
 					$header.css('background-position', '');
 
-				});w
+				});
 
 				breakpoints.on('>medium', function() {
 
