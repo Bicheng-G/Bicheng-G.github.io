@@ -75,7 +75,7 @@
 					$window.off('scroll.strata_parallax');
 					$header.css('background-position', '');
 
-				});
+				});w
 
 				breakpoints.on('>medium', function() {
 
@@ -96,6 +96,7 @@
 	// Main Sections: Two.
 
 		// Lightbox gallery.
+		/*
 			$window.on('load', function() {
 
 				$('#two').poptrox({
@@ -113,5 +114,6 @@
 				});
 
 			});
+		*/
 
 })(jQuery);

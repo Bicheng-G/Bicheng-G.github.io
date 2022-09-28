@@ -47,7 +47,7 @@ function requestUserRepos(username){
 
             // Create the html markup for each article
             article.innerHTML = (`
-            	<a href="images/fulls/${data[i].name}.png" class="image fit thumb"><img src="images/thumbs/${data[i].name}.png" alt="" style="height: 250px; object-fit: cover;" /></a>
+            	<a href="${data[i].html_url}" target="_blank" rel="noopener noreferrer" class="image fit thumb"><img src="images/thumbs/${data[i].name}.png" alt="" style="height: 250px; object-fit: cover;" /></a>
             	<h3><a href="${data[i].html_url}" target="_blank" rel="noopener noreferrer"> ${repoName}</a></h3>
             	<p>${data[i].description}</p>
             `+skill);
