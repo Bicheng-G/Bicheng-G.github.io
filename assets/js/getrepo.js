@@ -24,37 +24,40 @@ function requestUserRepos(username){
         
         // Loop over each object in data array
         for (let i in data) {
-            // Get the div with id of of userRepos
-            let div = document.getElementById('userRepos');
-    
-            // Create variable that will create article's to be added to div
-            let article = document.createElement('article');   
-            
-            // Add Bootstrap list item class to each article
-            article.classList.add('col-6','col-12-xsmall', 'work-item')
 
-            // Add topics as ul element
-            let Len = data[i].topics.length;
-            let skill = '<ul class="skill-tags">';
-            for (let z = 0; z < Len; z++) {
-              skill += "<li>#"+data[i].topics[z]+"</li>";
+            if (!data[i].name.includes("gatsby")){
+
+                // Get the div with id of of userRepos
+                let div = document.getElementById('userRepos');
+        
+                // Create variable that will create article's to be added to div
+                let article = document.createElement('article');   
+                
+                // Add Bootstrap list item class to each article
+                article.classList.add('col-6','col-12-xsmall', 'work-item')
+
+                // Add topics as ul element
+                let Len = data[i].topics.length;
+                let skill = '<ul class="skill-tags">';
+                for (let z = 0; z < Len; z++) {
+                  skill += "<li>#"+data[i].topics[z]+"</li>";
+                }
+                skill += "</ul>";
+
+                // Clean repo name
+                let repoName = data[i].name;
+                repoName = (repoName.replace(/-|\./gi," ")).replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
+
+                // Create the html markup for each article
+                article.innerHTML = (`
+                	<a href="${data[i].html_url}" target="_blank" rel="noopener noreferrer" class="image fit thumb"><img src="images/thumbs/${data[i].name}.png" alt="" style="height: 250px; object-fit: cover;" /></a>
+                	<h3><a href="${data[i].html_url}" target="_blank" rel="noopener noreferrer"> ${repoName}</a></h3>
+                	<p>${data[i].description}</p>
+                `+skill);
+
+                // Append each article to the div
+                div.appendChild(article);
             }
-            skill += "</ul>";
-
-            // Clean repo name
-            let repoName = data[i].name;
-            repoName = (repoName.replace(/-|\./gi," ")).replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
-
-            // Create the html markup for each article
-            article.innerHTML = (`
-            	<a href="${data[i].html_url}" target="_blank" rel="noopener noreferrer" class="image fit thumb"><img src="images/thumbs/${data[i].name}.png" alt="" style="height: 250px; object-fit: cover;" /></a>
-            	<h3><a href="${data[i].html_url}" target="_blank" rel="noopener noreferrer"> ${repoName}</a></h3>
-            	<p>${data[i].description}</p>
-            `+skill);
-
-            // Append each article to the div
-            div.appendChild(article);
-
         }
 
     }
