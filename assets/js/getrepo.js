@@ -25,7 +25,9 @@ function requestUserRepos(username){
         // Loop over each object in data array
         for (let i in data) {
 
-            if (!data[i].name.includes("gatsby")){
+            const noShow = ["gatsby","github"]
+
+            if (!noShow.some(item => data[i].name.includes(item))){
 
                 // Get the div with id of of userRepos
                 let div = document.getElementById('userRepos');
