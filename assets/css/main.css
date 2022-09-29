@@ -3065,6 +3065,9 @@ input, select, textarea {
 			}
 
 		/* List */
+			ul.nav li {	
+				padding: 0 3em 0 0;
+			}
 
 			ul.icons li .icon {
 				font-size: 1.25em;
@@ -3138,7 +3141,7 @@ input, select, textarea {
 
 /* Small */
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 750px) {
 
 		/* Basic */
 
@@ -3159,7 +3162,7 @@ input, select, textarea {
 			}
 
 			h4 {
-				font-size: 0.8em;
+				font-size: 0.9em;
 			}
 
 		/* Section/Article */
@@ -3173,6 +3176,9 @@ input, select, textarea {
 			}
 
 		/* List */
+			ul.nav li {	
+				padding: 0 2em 0 0;
+			}
 
 			ul.labeled-icons li {
 				padding-left: 2em;
@@ -3249,25 +3255,16 @@ input, select, textarea {
 	}
 
 ul.nav {
-	cursor: default;
 	list-style: none;
 	padding-left: 0;
 }
 
 ul.nav li {	
 	display: inline-block;
-	padding: 0 5em 0 0;
+	padding-right:  5em;
 }
 
-ul.nav li:last-child {
-	padding-right: 0;
-}
-
-ul.nav li .icon:before {
-	font-size: 1.1em;
-}
-
-ul.nav li:nth-child(2) h4 span:nth-child(2) {
+ul.nav li:nth-child(2) h3 span:nth-child(2) {
 	filter: blur(3px);
         -webkit-filter: blur(3px);
 }
@@ -3311,3 +3308,42 @@ input {
  input:focus + .input-highlight {
 	 border-top: 3px solid #fbc91b;
 }
+
+.typing-container {
+	 display: flex;
+	 justify-content: flex-end;
+	 align-items: center
+}
+
+@media screen and (max-width: 980px) {
+	.typing-container {
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	}
+}
+
+ .typing-container .input-cursor {
+	 display: inline-block;
+	 width: 2px;
+	 height: 24px;
+	 background-color: white;
+	 margin-left: 3px;
+	 animation: blink 0.6s linear infinite alternate;
+	 overflow: hidden;
+}
+ @keyframes blink {
+	 0% {
+		 opacity: 1;
+	}
+	 40% {
+		 opacity: 1;
+	}
+	 60% {
+		 opacity: 0;
+	}
+	 100% {
+		 opacity: 0;
+	}
+}
+
