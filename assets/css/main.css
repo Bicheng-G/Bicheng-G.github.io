@@ -126,7 +126,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #787878;
+		color: #ffffff;
 		font-weight: 400;
 	}
 
@@ -2651,11 +2651,11 @@ input, select, textarea {
 		}
 
 		#header strong, #header b {
-			color: #ffffff;
+			color: rgb(255,255,255);
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
+			color: rgb(255,255,255);
 		}
 
 		#header h1 {
