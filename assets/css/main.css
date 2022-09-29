@@ -2652,6 +2652,7 @@ input, select, textarea {
 
 		#header strong, #header b {
 			color: rgba(255, 255, 255, 1);
+			font-weight: 700;
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
