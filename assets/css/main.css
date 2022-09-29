@@ -126,7 +126,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #787878;
 		font-weight: 400;
 	}
 
@@ -1800,7 +1800,7 @@ input, select, textarea {
 
 	header.major h2 {
 		font-size: 2em;
-		font-family: "PP Neue Machine", Inter, sans-serif;
+		font-family: Inter, sans-serif;
 		font-weight: 700;
 	}
 
@@ -2651,11 +2651,11 @@ input, select, textarea {
 		}
 
 		#header strong, #header b {
-			color: rgb(255,255,255);
+			color: rgba(255, 255, 255, 1);
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: rgb(255,255,255);
+			color: rgba(255, 255, 255, 1);
 		}
 
 		#header h1 {
@@ -2663,7 +2663,7 @@ input, select, textarea {
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
-			font-family: "PP Neue Machine", Inter, sans-serif;
+			font-family: Inter, sans-serif;
 			font-weight: 700;
 		}
 
@@ -3110,7 +3110,7 @@ input, select, textarea {
 			#footer {
 				background-attachment: scroll;
 				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+				background-image: url("images/overlay.png"), url("../../images/bg.webp");
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
