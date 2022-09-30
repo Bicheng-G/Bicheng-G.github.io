@@ -2152,6 +2152,7 @@ input, select, textarea {
 			.image.avatar img {
 				border-radius: 100%;
 				width: 100%;
+				max-width: 140px;
 			}
 
 /* List */
@@ -2459,7 +2460,7 @@ input, select, textarea {
 		display: inline-block;
 		font-weight: 500;
 		height: 3.15em;
-		height: calc(2.75em + 6px);
+		height: calc(2.75em + 2px);
 		line-height: 2.75em;
 		min-width: 12em;
 		padding: 0 1.5em;
@@ -2671,7 +2672,6 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 9em;
 		}
 
 /* Footer */
@@ -3379,7 +3379,7 @@ input {
 .gb_0a {
     height: 40px;
     position: absolute;
-    right: 105px;
-    top: -3px;
+    right: 106px;
+    top: -5px;
     width: 40px;
 }
