@@ -140,7 +140,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #000000;
-		font-weight: 700;
+		font-weight: 600;
 		line-height: 1em;
 		margin: 0 0 1em 0;
 	}
@@ -1801,7 +1801,7 @@ input, select, textarea {
 	header.major h2 {
 		font-size: 2em;
 		font-family: Inter, sans-serif;
-		font-weight: 700;
+		font-weight: 600;
 	}
 
 /* Form */
@@ -2652,7 +2652,7 @@ input, select, textarea {
 
 		#header strong, #header b {
 			color: rgba(255, 255, 255, 1);
-			font-weight: 700;
+			font-weight: 600;
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
@@ -2665,7 +2665,7 @@ input, select, textarea {
 			line-height: 1.75em;
 			margin: 0;
 			font-family: Inter, sans-serif;
-			font-weight: 700;
+			font-weight: 600;
 		}
 
 		#header .image.avatar {
@@ -3151,7 +3151,7 @@ input, select, textarea {
 
 /* Small */
 
-	@media screen and (max-width: 750px) {
+	@media screen and (max-width: 736px) {
 
 		/* Basic */
 
@@ -3187,7 +3187,7 @@ input, select, textarea {
 
 		/* List */
 			ul.nav li {	
-				padding: 0 2em 0 0;
+				padding-right: 5em;
 			}
 
 			ul.labeled-icons li {
@@ -3242,6 +3242,10 @@ input, select, textarea {
 /* XSmall */
 
 	@media screen and (max-width: 480px) {
+			ul.nav li {	
+				padding-right: 5em;
+			}
+
 
 		/* Header */
 
@@ -3273,15 +3277,14 @@ ul.nav {
 ul.nav li {	
 	display: inline-block;
 	padding-right: 3em;
-	font-size: 0.9em;
 	color: rgba(0, 0, 0, 0.5);
 }
 
 ul.nav li h3 {	
 	display: inline-block;
-	padding-right: 3em;
 	font-size: 1em;
 	color: rgba(0, 0, 0, 1);
+	font-weight: 400;
 }
 
 ul.nav li:nth-child(2) h3 span:nth-child(2) {
