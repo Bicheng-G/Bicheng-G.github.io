@@ -2451,17 +2451,17 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		background-color: transparent;
+		background-color: #fff;
 		border-radius: 0.35em;
-		border: solid 3px #123ff3;
-		color: rgba(0,0,0,0.7) !important;
+		border: solid 1px #dadce0;
+		color: #1a73e8 !important;
 		cursor: pointer;
 		display: inline-block;
-		font-weight: 400;
+		font-weight: 500;
 		height: 3.15em;
 		height: calc(2.75em + 6px);
 		line-height: 2.75em;
-		min-width: 10em;
+		min-width: 12em;
 		padding: 0 1.5em;
 		text-align: center;
 		text-decoration: none;
@@ -2472,17 +2472,18 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border-color: #6981E7;
-			color: #6981E7 !important;
+			border-color: #1765cc;
+			color: #1568d5 !important;
+			background-color: #f8f9fa;
 		}
 
 		input[type="submit"]:active,
 		input[type="reset"]:active,
 		input[type="button"]:active,
 		.button:active {
-			background-color: rgba(73, 191, 157, 0.1);
-			border-color: #49bf9d;
-			color: #49bf9d !important;
+			border-color: #1765cc;
+			color: #1765cc !important;
+			background-color: #e4e8ec;
 		}
 
 		input[type="submit"].icon,
@@ -2525,8 +2526,8 @@ input, select, textarea {
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #3644E4;
-			border-color: #3644E4;
+			background-color: #1a73e8;
+			border-color: transparent;
 			color: #ffffff !important;
 		}
 
@@ -2534,16 +2535,16 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #6981E7;
-				border-color: #6981E7;
+				background-color: #1765cc;
+				border-color: transparent;
 			}
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #0336FF;
-				border-color: #0336FF;
+				background-color: #185abc;
+				border-color: transparent;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -3279,13 +3280,11 @@ ul.nav {
 ul.nav li {	
 	display: inline-block;
 	padding-right: 3em;
-	color: rgba(0, 0, 0, 0.5);
 }
 
 ul.nav li h3 {	
 	display: inline-block;
 	font-size: 1em;
-	color: rgba(0, 0, 0, 0.85);
 	font-weight: 400;
 }
 
@@ -3372,3 +3371,15 @@ input {
 	}
 }
 
+.gb_1a .gb_0a, .gb_2a .gb_0a {
+    right: 0;
+    top: 0;
+}
+
+.gb_0a {
+    height: 40px;
+    position: absolute;
+    right: 105px;
+    top: -3px;
+    width: 40px;
+}
