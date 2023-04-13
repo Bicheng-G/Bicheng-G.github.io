@@ -1,8 +1,9 @@
 const carouselText = [
-  {text: "data", color: "white"},
-  {text: "cloud", color: "white"},
-  {text: "self-actualization", color: "white"},
-  {text: "automation", color: "white"}
+  {text: "growth", color: "white"},
+  {text: "product", color: "white"},
+  {text: "users' advocate", color: "white"},
+  {text: "business", color: "white"},
+  {text: "problem solving", color: "white"}
 ]
 
 
